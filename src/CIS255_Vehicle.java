@@ -50,29 +50,30 @@ public class CIS255_Vehicle {
    // Menu scanner for create vehicle menu
     private static void createVehicleMenu(Scanner navScan) {
         String navInput;
+        String[] make = {"Coupe", "Sedan", "Truck"};
 
         do {
             displayCreateVehicleMenu();
             navInput = navScan.nextLine();
 
-            switch (navInput) {
-                case "1":
-                
-                    // Logic for creating a truck
-                    System.out.println("Creating a truck...");
-                    break;
-                    
-                case "2":
-                
-                    // Logic for creating a sedan
-                    System.out.println("Creating a sedan...");
-                    break;
-                    
-                case "3":
-                
+            switch (navInput) {                
+                case "1":                
                     // Logic for creating a coupe
-                    System.out.println("Creating a coupe...");
+                    Make.main(new String[]{make[0]});
+                    System.out.println(ColorEnum.Silver);
                     break;
+                    
+                case "2":                
+                    // Logic for creating a truck
+                    Make.main(new String[]{make[1]});
+                    System.out.println(ColorEnum.Black);
+                    break;
+                    
+                case "3":                
+                    // Logic for creating a sedan
+                    Make.main(new String[]{make[2]});
+                    System.out.println(ColorEnum.Red);
+                    break;         
                     
                 case "4":  // Break to return to previous menu
                     break;
@@ -88,9 +89,9 @@ public class CIS255_Vehicle {
         System.out.println("\n");
         System.out.println("=== Create Vehicle Menu === \n");
         
-        System.out.println("1. Create Truck");
+        System.out.println("1. Create Coupe");
         System.out.println("2. Create Sedan");
-        System.out.println("3. Create Coupe");
+        System.out.println("3. Create Truck");
         System.out.println("4. Go Back \n");
         
         System.out.print("Enter your choice: ");
@@ -107,3 +108,5 @@ public class CIS255_Vehicle {
         System.out.println("Saving to file...");
     }
 }
+
+
