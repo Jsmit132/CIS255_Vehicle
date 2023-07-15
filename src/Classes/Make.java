@@ -14,19 +14,19 @@ public abstract class Make extends CIS255_Vehicle{
                break;
          
             case "2": // Ford
-                    //Ford.createVehicle(navScan, "Ford");
+                    Ford.createVehicle(navScan, "Ford", vehicleStorage);
                break;
          
             case "3": // Honda
-                    //Honda.createVehicle(navScan, "Honda");
+                    Honda.createVehicle(navScan, "Honda", vehicleStorage);
                break;
          
             case "4": // Tesla
-                    //Tesla.createVehicle(navScan, "Tesla");
+                    Tesla.createVehicle(navScan, "Tesla", vehicleStorage);
                break;
          
             case "5": // Toyota
-                    //Toyota.createVehicle(navScan, "Toyota");
+                    Toyota.createVehicle(navScan, "Toyota", vehicleStorage);
                break;
          
             case "6":  // Break to return to the previous menu

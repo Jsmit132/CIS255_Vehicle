@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class Dodge extends Make {
 
+   // Method to create a vehicle for the Dodge make
    public static void createVehicle(Scanner navScan, String make, VehicleStorage vehicleStorage) {
       String navType;
       String navModel;
    
       do {
-         displayTypeMenu(make);
+         displayTypeMenu(make); // Display the type menu for Dodge
          navType = navScan.nextLine();
       
          switch (navType) {
@@ -17,27 +18,28 @@ public class Dodge extends Make {
                DodgeChallenger challenger2020 = DodgeChallenger.createChallenger2020();
                DodgeChallenger challenger2021 = DodgeChallenger.createChallenger2021();
             
-               // Create Menu
+               // Display the available Coupe models
                challenger2019.displayDetails("1.");
                challenger2020.displayDetailsNoHead("2.");
                challenger2021.displayDetailsNoHead("3.");
+               System.out.println("4. Go Back \n");
             
                System.out.print("Enter your choice: ");
                navModel = navScan.nextLine();
             
-               // Input Switch input
+               // Input Switch input for selecting a Coupe model
                switch (navModel) {
                   case "1": // challenger2019
                      vehicleStorage.addVehicle(challenger2019);
-                     return;
+                     return; // Return to the previous menu after adding the vehicle
                
                   case "2": // challenger2020
                      vehicleStorage.addVehicle(challenger2020);
-                     return;
+                     return; // Return to the previous menu after adding the vehicle
                
                   case "3": // challenger2021
                      vehicleStorage.addVehicle(challenger2021);
-                     return;
+                     return; // Return to the previous menu after adding the vehicle
                
                   case "4": // Break to return to the previous menu
                      break;
@@ -49,13 +51,77 @@ public class Dodge extends Make {
          
             case "2": // Sedan
                // Logic for creating a Dodge Sedan vehicle
-               System.out.println("Creating a Dodge Sedan vehicle...");
-               break;
+               DodgeAvenger avenger = DodgeAvenger.createAvenger();
+               DodgeCharger charger = DodgeCharger.createCharger();
+               DodgeDart dart = DodgeDart.createDart();
+            
+               // Display the available Sedan models
+               avenger.displayDetails("1.");
+               charger.displayDetailsNoHead("2.");
+               dart.displayDetailsNoHead("3.");
+               System.out.println("4. Go Back \n");
+            
+               System.out.print("Enter your choice: ");
+               navModel = navScan.nextLine();
+            
+               // Input Switch input for selecting a Sedan model
+               switch (navModel) {
+                  case "1": // avenger
+                     vehicleStorage.addVehicle(avenger);
+                     return; // Return to the previous menu after adding the vehicle
+               
+                  case "2": // charger
+                     vehicleStorage.addVehicle(charger);
+                     return; // Return to the previous menu after adding the vehicle
+               
+                  case "3": // dart
+                     vehicleStorage.addVehicle(dart);
+                     return; // Return to the previous menu after adding the vehicle
+               
+                  case "4": // Break to return to the previous menu
+                     break;
+               
+                  default: // Error
+                     System.out.println("Invalid choice. Please try again.");
+               }
+               break; // Exit the Case "2" block after processing the Sedan logic
          
             case "3": // Truck
                // Logic for creating a Dodge Truck vehicle
-               System.out.println("Creating a Dodge Truck vehicle...");
-               break;
+               DodgeRam1500 ram1500Blue = DodgeRam1500.createRam1500Blue();
+               DodgeRam1500 ram1500Red = DodgeRam1500.createRam1500Red();
+               DodgeRam2500 ram2500 = DodgeRam2500.createRam2500();
+            
+               // Display the available Truck models
+               ram1500Blue.displayDetails("1.");
+               ram1500Red.displayDetailsNoHead("2.");
+               ram2500.displayDetailsNoHead("3.");
+               System.out.println("4. Go Back \n");
+            
+               System.out.print("Enter your choice: ");
+               navModel = navScan.nextLine();
+            
+               // Input Switch input for selecting a Truck model
+               switch (navModel) {
+                  case "1": // ram1500Blue
+                     vehicleStorage.addVehicle(ram1500Blue);
+                     return; // Return to the previous menu after adding the vehicle
+               
+                  case "2": // ram1500Red
+                     vehicleStorage.addVehicle(ram1500Red);
+                     return; // Return to the previous menu after adding the vehicle
+               
+                  case "3":// ram2500
+                     vehicleStorage.addVehicle(ram2500);
+                     return; // Return to the previous menu after adding the vehicle
+               
+                  case "4": // Break to return to the previous menu
+                     break;
+               
+                  default: // Error
+                     System.out.println("Invalid choice. Please try again.");
+               }
+               break; // Exit the Case "2" block after processing the Sedan logic
          
             case "4": // Break to return to the previous menu
                return;
@@ -66,5 +132,4 @@ public class Dodge extends Make {
          }
       } while (!navType.equals("4"));
    }
-
 }
