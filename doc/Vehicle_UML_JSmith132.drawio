@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-16T19:00:33.086Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0 (Edition std-1)" etag="dL7ZdNNdofCPqJ5lpxGp" version="21.6.2" type="github" pages="38">
+<mxfile host="app.diagrams.net" modified="2023-07-16T19:45:33.443Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0 (Edition std-1)" etag="Da6ULWBENP2v_x6bX_KM" version="21.6.2" type="github" pages="38">
   <diagram name="Truck" id="90zJ3aJE29S19_U5xq-6">
     <mxGraphModel dx="1329" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -988,7 +988,7 @@
         <mxCell id="Pz9xpcRLtusB_n0bUDqq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="Pz9xpcRLtusB_n0bUDqq-1" source="Pz9xpcRLtusB_n0bUDqq-3" target="Pz9xpcRLtusB_n0bUDqq-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Pz9xpcRLtusB_n0bUDqq-3" value="ToyotaCamry" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="Pz9xpcRLtusB_n0bUDqq-1">
+        <mxCell id="Pz9xpcRLtusB_n0bUDqq-3" value="ToyotaAvalon" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" vertex="1" parent="Pz9xpcRLtusB_n0bUDqq-1">
           <mxGeometry x="370" y="140" width="310" height="330" as="geometry">
             <mxRectangle x="350" y="430" width="70" height="30" as="alternateBounds" />
           </mxGeometry>
