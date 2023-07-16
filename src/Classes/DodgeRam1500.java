@@ -1,5 +1,5 @@
 // DodgeRam1500 class extends the abstract class Coupe
-public class DodgeRam1500 extends Coupe {
+public class DodgeRam1500 extends Truck {
     // Constructor to initialize the DodgeRam1500 object with the given details
     public DodgeRam1500(String model, int year, String fuelType, int numberOfDoors, ColorEnum color) {
         super("Dodge", "Truck", model, year, fuelType, numberOfDoors, color);
