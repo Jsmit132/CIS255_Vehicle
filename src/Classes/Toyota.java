@@ -14,9 +14,9 @@ public class Toyota extends Make {
             switch (navType) {
                 case "1": // Coupe
                     // Logic for creating a Toyota Coupe vehicle
-                    Toyota86 eightySix = Toyota86.create86();
-                    ToyotaGr86 grEightySix = ToyotaGr86.createGr86();
-                    ToyotaSupra supra = ToyotaSupra.createSupra();
+                    Eighty6 eightySix = Eighty6.create86();
+                    Gr86 grEightySix = Gr86.createGr86();
+                    Supra supra = Supra.createSupra();
 
                     // Display the available Coupe models
                     eightySix.displayDetails("1.");
@@ -50,9 +50,9 @@ public class Toyota extends Make {
 
                 case "2": // Sedan
                     // Logic for creating a Toyota Sedan vehicle
-                    ToyotaAvalon avalon = ToyotaAvalon.createAvalon();
-                    ToyotaCamry camry = ToyotaCamry.createCamry();
-                    ToyotaYaris yaris = ToyotaYaris.createYaris();
+                    Avalon avalon = Avalon.createAvalon();
+                    Camry camry = Camry.createCamry();
+                    Yaris yaris = Yaris.createYaris();
 
                     // Display the available Sedan models
                     avalon.displayDetails("1.");
@@ -87,9 +87,9 @@ public class Toyota extends Make {
 
                 case "3": // Truck
                     // Logic for creating a Toyota Truck vehicle
-                    ToyotaTacoma tacoma = ToyotaTacoma.createTacoma();
-                    ToyotaTundra tundraWhite = ToyotaTundra.createTundraWhite();
-                    ToyotaTundra tundraBlue = ToyotaTundra.createTundraBlue();
+                    Tacoma tacoma = Tacoma.createTacoma();
+                    Tundra tundraWhite = Tundra.createTundraWhite();
+                    Tundra tundraBlue = Tundra.createTundraBlue();
 
                     // Display the available Truck models
                     tacoma.displayDetails("1.");

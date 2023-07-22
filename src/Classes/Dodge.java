@@ -14,9 +14,9 @@ public class Dodge extends Make {
          switch (navType) {
             case "1": // Coupe
                // Logic for creating a Dodge Coupe vehicle
-               DodgeChallenger challenger2019 = DodgeChallenger.createChallenger2019();
-               DodgeChallenger challenger2020 = DodgeChallenger.createChallenger2020();
-               DodgeChallenger challenger2021 = DodgeChallenger.createChallenger2021();
+               Challenger challenger2019 = Challenger.createChallenger2019();
+               Challenger challenger2020 = Challenger.createChallenger2020();
+               Challenger challenger2021 = Challenger.createChallenger2021();
             
                // Display the available Coupe models
                challenger2019.displayDetails("1.");
@@ -51,9 +51,9 @@ public class Dodge extends Make {
          
             case "2": // Sedan
                // Logic for creating a Dodge Sedan vehicle
-               DodgeAvenger avenger = DodgeAvenger.createAvenger();
-               DodgeCharger charger = DodgeCharger.createCharger();
-               DodgeDart dart = DodgeDart.createDart();
+               Avenger avenger = Avenger.createAvenger();
+               Charger charger = Charger.createCharger();
+               Dart dart = Dart.createDart();
             
                // Display the available Sedan models
                avenger.displayDetails("1.");
@@ -88,9 +88,9 @@ public class Dodge extends Make {
          
             case "3": // Truck
                // Logic for creating a Dodge Truck vehicle
-               DodgeRam1500 ram1500Blue = DodgeRam1500.createRam1500Blue();
-               DodgeRam1500 ram1500Red = DodgeRam1500.createRam1500Red();
-               DodgeRam2500 ram2500 = DodgeRam2500.createRam2500();
+               Ram1500 ram1500Blue = Ram1500.createRam1500Blue();
+               Ram1500 ram1500Red = Ram1500.createRam1500Red();
+               Ram2500 ram2500 = Ram2500.createRam2500();
             
                // Display the available Truck models
                ram1500Blue.displayDetails("1.");

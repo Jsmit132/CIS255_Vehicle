@@ -14,9 +14,9 @@ public class Honda extends Make {
             switch (navType) {
                 case "1": // Coupe
                     // Logic for creating a Honda Coupe vehicle
-                    HondaAccord accord2012 = HondaAccord.createAccord2012();
-                    HondaCRZ crz2013 = HondaCRZ.createCRZ2013();
-                    HondaCRZ crz2015 = HondaCRZ.createCRZ2015();
+                    Accord accord2012 = Accord.createAccord2012();
+                    CRZ crz2013 = CRZ.createCRZ2013();
+                    CRZ crz2015 = CRZ.createCRZ2015();
 
                     // Display the available Coupe models
                     accord2012.displayDetails("1.");
@@ -51,8 +51,8 @@ public class Honda extends Make {
 
                 case "2": // Sedan
                     // Logic for creating a Honda Sedan vehicle
-                    HondaAccord accord2016 = HondaAccord.createAccord2016();
-                    HondaCivic civic2015 = HondaCivic.createCivic2015();
+                    Accord accord2016 = Accord.createAccord2016();
+                    Civic civic2015 = Civic.createCivic2015();
 
                     // Display the available Sedan models
                     accord2016.displayDetails("1.");
@@ -82,9 +82,9 @@ public class Honda extends Make {
 
                 case "3": // Truck
                     // Logic for creating a Honda Truck vehicle
-                    HondaRidgeline ridgeline2018 = HondaRidgeline.createRidgeline2018();
-                    HondaRidgeline ridgeline2017 = HondaRidgeline.createRidgeline2017();
-                    HondaRidgeline ridgeline2019 = HondaRidgeline.createRidgeline2019();
+                    Ridgeline ridgeline2018 = Ridgeline.createRidgeline2018();
+                    Ridgeline ridgeline2017 = Ridgeline.createRidgeline2017();
+                    Ridgeline ridgeline2019 = Ridgeline.createRidgeline2019();
 
                     // Display the available Truck models
                     ridgeline2018.displayDetails("1.");

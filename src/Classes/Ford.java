@@ -13,9 +13,9 @@ public class Ford extends Make {
             switch (navType) {
                 case "1": // Coupe
                     // Logic for creating a Ford Coupe vehicle
-                    FordMustang mustang2018 = FordMustang.createMustang2018();
-                    FordMustang mustang2019 = FordMustang.createMustang2019();
-                    FordMustang mustang2020 = FordMustang.createMustang2020();
+                    Mustang mustang2018 = Mustang.createMustang2018();
+                    Mustang mustang2019 = Mustang.createMustang2019();
+                    Mustang mustang2020 = Mustang.createMustang2020();
 
                     // Display the available Coupe models
                     mustang2018.displayDetails("1.");
@@ -50,9 +50,9 @@ public class Ford extends Make {
 
                 case "2": // Sedan
                     // Logic for creating a Ford Sedan vehicle
-                    FordFusion fusion = FordFusion.createFusion();
-                    FordTaurus taurus = FordTaurus.createTaurus();
-                    FordFocus focus = FordFocus.createFocus();
+                    Fusion fusion = Fusion.createFusion();
+                    Taurus taurus = Taurus.createTaurus();
+                    Focus focus = Focus.createFocus();
 
                     // Display the available Sedan models
                     fusion.displayDetails("1.");
@@ -87,9 +87,9 @@ public class Ford extends Make {
 
                 case "3": // Truck
                     // Logic for creating a Ford Truck vehicle
-                    FordF150 f150 = FordF150.createF150();
-                    FordF250 f250 = FordF250.createF250();
-                    FordRanger ranger = FordRanger.createRanger();
+                    F150 f150 = F150.createF150();
+                    F250 f250 = F250.createF250();
+                    Ranger ranger = Ranger.createRanger();
 
                     // Display the available Truck models
                     f150.displayDetails("1.");

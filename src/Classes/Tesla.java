@@ -14,13 +14,13 @@ public class Tesla extends Make {
             switch (navType) {
                 case "1": // Sedan
                     // Logic for creating a Tesla Sedan vehicle
-                    TeslaModel3 model3_2018 = TeslaModel3.createModel3_2018();
-                    TeslaModel3 model3_2023 = TeslaModel3.createModel3_2023();
-                    TeslaModelS modelS_2021_blue = TeslaModelS.createModelS_2021_blue();
-                    TeslaModelS modelS_2021_white = TeslaModelS.createModelS_2021_white();
-                    TeslaModelY modelY_2021 = TeslaModelY.createModelY_2021();
-                    TeslaModelY modelY_2020 = TeslaModelY.createModelY_2020();
-                    TeslaModelY modelY_2022 = TeslaModelY.createModelY_2022();
+                    Model3 model3_2018 = Model3.createModel3_2018();
+                    Model3 model3_2023 = Model3.createModel3_2023();
+                    ModelS modelS_2021_blue = ModelS.createModelS_2021_blue();
+                    ModelS modelS_2021_white = ModelS.createModelS_2021_white();
+                    ModelY modelY_2021 = ModelY.createModelY_2021();
+                    ModelY modelY_2020 = ModelY.createModelY_2020();
+                    ModelY modelY_2022 = ModelY.createModelY_2022();
 
                     // Display the available Sedan models
                     model3_2018.displayDetails("1.");
