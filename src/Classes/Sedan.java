@@ -24,15 +24,25 @@ public abstract class Sedan implements IVehicle {
     // Method to display the details of the Sedan with a header
     @Override
     public void displayDetails(String listNum) {
-        System.out.println("Menu | Make       | Type       | Model      | Year | Engine Type | Door Count | Color");
-        System.out.printf("%-4s | %-10s | %-10s | %-10s | %-4d | %-11s | %-10d | %-10s%n",
+        // Fixed-width specification for display data
+        String menuFormat = "%-4s | %-10s | %-10s | %-10s | %-4s | %-11s | %-10s | %-10s%n";
+
+        // Display the header with labels
+        System.out.printf(menuFormat,
+                "Menu", "Make", "Type", "Model", "Year", "Engine Type", "Door Count", "Color");
+        // Display the data fields with vehicle details
+        System.out.printf(menuFormat,
                 listNum, make, type, model, year, fuelType, numberOfDoors, color);
     }
 
     // Method to display the details of the Sedan without a header
     @Override
     public void displayDetailsNoHead(String listNum) {
-        System.out.printf("%-4s | %-10s | %-10s | %-10s | %-4d | %-11s | %-10d | %-10s%n",
+        // Fixed-width specification for display data
+        String menuFormat = "%-4s | %-10s | %-10s | %-10s | %-4s | %-11s | %-10s | %-10s%n";
+
+        // Display the data fields with vehicle details
+        System.out.printf(menuFormat,
                 listNum, make, type, model, year, fuelType, numberOfDoors, color);
     }
 }

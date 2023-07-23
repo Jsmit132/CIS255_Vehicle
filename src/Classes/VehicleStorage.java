@@ -51,14 +51,13 @@ public class VehicleStorage {
       
       try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
          // Write the header row
-         writer.write("Make|Type|Model|Year|Engine Type|Door Count|Color");
-         writer.newLine();
+         writer.write("Make|Type|Model|Year|Engine Type|Door Count|Color" + "\n");
+
          
          // Write each vehicle's data to the file
          for (IVehicle vehicle : vehicles) {
             String vehicleData = vehicle.toCSVString();
-            writer.write(vehicleData);
-            writer.newLine();
+            writer.write(vehicleData + "\n");
          }
          
          System.out.println("Data saved to file: " + filename);
